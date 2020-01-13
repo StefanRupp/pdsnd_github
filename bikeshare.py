@@ -32,28 +32,33 @@ def get_filters():
                 print('\nNo valid input, please try again!\n')
         except:
             break
+    # User Input if he/she wants to add filter for month or day to the city filter
+    add_filter = input('\nDo you want to add a filter for MONTH or DAY?\nType in yes or no\n')
+    if add_filter.lower() != 'yes':
+        month = 'all'
+        day = 'all'
+    else:     
+		# TO DO: get user input for month (all, january, february, ... , june)
+		while month not in valid_input_month:
+			try:
+				month = input('\nWhich month do you want to explore: all, january, february, ... , june?\n').lower()
+				if month in valid_input_month:
+					print("Let's explore the data given for {}!" .format(month))
+				else:
+					print('\nNo valid input, please try again!\n')
+			except:
+				break
 
-    # TO DO: get user input for month (all, january, february, ... , june)
-    while month not in valid_input_month:
-        try:
-            month = input('\nWhich month do you want to explore: all, january, february, ... , june?\n').lower()
-            if month in valid_input_month:
-                print("Let's explore the data given for {}!" .format(month))
-            else:
-                print('\nNo valid input, please try again!\n')
-        except:
-            break
-
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    while day not in valid_input_day:
-        try:
-            day = input('\nWhich day do you want to explore: all, monday, tuesday, ... sunday?\n').lower()
-            if day in valid_input_day:
-                print("Let's explore the data given for {}!" .format(day))
-            else:
-                print('\nNo valid input, please try again!\n')
-        except:
-            break
+		# TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+		while day not in valid_input_day:
+			try:
+				day = input('\nWhich day do you want to explore: all, monday, tuesday, ... sunday?\n').lower()
+				if day in valid_input_day:
+					print("Let's explore the data given for {}!" .format(day))
+				else:
+					print('\nNo valid input, please try again!\n')
+			except:
+				break
 
     print('-'*40)
     return city, month, day
