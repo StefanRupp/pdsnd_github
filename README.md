@@ -5,7 +5,7 @@
 ### Explore bikeshare data
 In general, this program is made to explore biksehare data which is stored in .csv-files.
 
-![Bikeshare Image](https://en.wikipedia.org/wiki/Divvy#/media/File:Divvy_bikes_in_Chicago.jpg)
+![Bikeshare Image](https://assets.change.org/photos/4/hm/ga/eghmgAwuiWEThCn-800x450-noPad.jpg?1524833332)
 
 ### Description
 To get the statistics, you need to start the program and choose a city.
@@ -31,14 +31,14 @@ The following csv-files are used:
 
 The program gets developed and tested with:
 
-* **Python** 		
-* **Anaconda** 		
+* **Python** 		*Version 3.7.4*
+* **Anaconda** 		*Version 4.7.12*
 
 To explore the bikeshare data, we are using python with the following libraries:
 
-* **time** 		
-* **pandas** 	
-* **numpy** 	
+* **time** 		*Version:14.16.27012*
+* **pandas** 	*Version:0.25.1*
+* **numpy** 	*Version:1.16.5*
 	
 ### Install instructions
 Take care, that the .csv-files are located in the same folder as the bikeshare project!
