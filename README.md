@@ -45,10 +45,13 @@ Take care, that the .csv-files are located in the same folder as the bikeshare p
 
 ### Credits
 - Many thanks to Udacity for this lerning program!
+- Thanks for the idea calculating readable timeduration [readable timeduration](https://www.python-forum.de/viewtopic.php?t=18266) 
+- Thanks for the great documentation for value_count [DataFrame value count]
+(https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html)
 
 ### README Updates
 * Add program version numbers
-
+* Adding Credits for info sides
 
 
 
