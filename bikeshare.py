@@ -77,7 +77,10 @@ def load_data(city, month, day):
     
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
-   
+
+    # return data-matrix size immediatly after import
+    print('The original data matrix for the city {} has a shape of: {}\n' .format(city.title(), df.shape))
+	
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
@@ -98,7 +101,10 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
-    
+
+    # return the data-matrix size after filtering and transforming
+    print('The data matrix after filtering and transforming for the city {} has a shape of: {}\n' .format(city.title(),df.shape))
+		
     return df
 
 def time_stats(df):
